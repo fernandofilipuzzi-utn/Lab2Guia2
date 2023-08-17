@@ -1,0 +1,14 @@
+F:\drive\tup\laboratorio\cursos\2023\laboratorio II\lab II - 2023 - comp. con alumn\campus_drive\campus_drive\202308101__clase_02p____guia_1_interac_obj\sol\Ej1_TaTeTi\TaTeTi\bin\Debug\TaTeTi.exe.config
+F:\drive\tup\laboratorio\cursos\2023\laboratorio II\lab II - 2023 - comp. con alumn\campus_drive\campus_drive\202308101__clase_02p____guia_1_interac_obj\sol\Ej1_TaTeTi\TaTeTi\bin\Debug\TaTeTi.exe
+F:\drive\tup\laboratorio\cursos\2023\laboratorio II\lab II - 2023 - comp. con alumn\campus_drive\campus_drive\202308101__clase_02p____guia_1_interac_obj\sol\Ej1_TaTeTi\TaTeTi\bin\Debug\TaTeTi.pdb
+F:\drive\tup\laboratorio\cursos\2023\laboratorio II\lab II - 2023 - comp. con alumn\campus_drive\campus_drive\202308101__clase_02p____guia_1_interac_obj\sol\Ej1_TaTeTi\TaTeTi\bin\Debug\TaTeTiClassLib.dll
+F:\drive\tup\laboratorio\cursos\2023\laboratorio II\lab II - 2023 - comp. con alumn\campus_drive\campus_drive\202308101__clase_02p____guia_1_interac_obj\sol\Ej1_TaTeTi\TaTeTi\bin\Debug\TaTeTiClassLib.pdb
+F:\drive\tup\laboratorio\cursos\2023\laboratorio II\lab II - 2023 - comp. con alumn\campus_drive\campus_drive\202308101__clase_02p____guia_1_interac_obj\sol\Ej1_TaTeTi\TaTeTi\obj\Debug\TaTeTi.csproj.AssemblyReference.cache
+F:\drive\tup\laboratorio\cursos\2023\laboratorio II\lab II - 2023 - comp. con alumn\campus_drive\campus_drive\202308101__clase_02p____guia_1_interac_obj\sol\Ej1_TaTeTi\TaTeTi\obj\Debug\TaTeTiVista.FormPrincipal.resources
+F:\drive\tup\laboratorio\cursos\2023\laboratorio II\lab II - 2023 - comp. con alumn\campus_drive\campus_drive\202308101__clase_02p____guia_1_interac_obj\sol\Ej1_TaTeTi\TaTeTi\obj\Debug\TaTeTiVista.FormDatos.resources
+F:\drive\tup\laboratorio\cursos\2023\laboratorio II\lab II - 2023 - comp. con alumn\campus_drive\campus_drive\202308101__clase_02p____guia_1_interac_obj\sol\Ej1_TaTeTi\TaTeTi\obj\Debug\TaTeTi.Properties.Resources.resources
+F:\drive\tup\laboratorio\cursos\2023\laboratorio II\lab II - 2023 - comp. con alumn\campus_drive\campus_drive\202308101__clase_02p____guia_1_interac_obj\sol\Ej1_TaTeTi\TaTeTi\obj\Debug\TaTeTi.csproj.GenerateResource.cache
+F:\drive\tup\laboratorio\cursos\2023\laboratorio II\lab II - 2023 - comp. con alumn\campus_drive\campus_drive\202308101__clase_02p____guia_1_interac_obj\sol\Ej1_TaTeTi\TaTeTi\obj\Debug\TaTeTi.csproj.CoreCompileInputs.cache
+F:\drive\tup\laboratorio\cursos\2023\laboratorio II\lab II - 2023 - comp. con alumn\campus_drive\campus_drive\202308101__clase_02p____guia_1_interac_obj\sol\Ej1_TaTeTi\TaTeTi\obj\Debug\TaTeTi.csproj.CopyComplete
+F:\drive\tup\laboratorio\cursos\2023\laboratorio II\lab II - 2023 - comp. con alumn\campus_drive\campus_drive\202308101__clase_02p____guia_1_interac_obj\sol\Ej1_TaTeTi\TaTeTi\obj\Debug\TaTeTi.exe
+F:\drive\tup\laboratorio\cursos\2023\laboratorio II\lab II - 2023 - comp. con alumn\campus_drive\campus_drive\202308101__clase_02p____guia_1_interac_obj\sol\Ej1_TaTeTi\TaTeTi\obj\Debug\TaTeTi.pdb
