@@ -56,5 +56,8 @@
       <Name>EscalerasYSerpientesLegacyClassLib</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="uml\nivel3.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

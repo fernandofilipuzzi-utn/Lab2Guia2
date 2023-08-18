@@ -116,5 +116,8 @@
   <ItemGroup>
     <Folder Include="img\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="uml\sistema.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
