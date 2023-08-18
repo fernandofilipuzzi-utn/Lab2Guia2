@@ -85,7 +85,7 @@ namespace TaTeTiDesktop
             this.cbNivel.Name = "cbNivel";
             this.cbNivel.Size = new System.Drawing.Size(181, 21);
             this.cbNivel.TabIndex = 4;
-         
+            this.cbNivel.SelectedIndexChanged += new System.EventHandler(this.cbNivel_SelectedIndexChanged);
             // 
             // label2
             // 

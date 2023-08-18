@@ -62,7 +62,7 @@ namespace TaTeTiDesktop
                 else
                     MessageBox.Show("Empate");
 
-                plTablero.Enabled = true;
+                plTablero.Enabled = false;
             }
         }
 
@@ -143,7 +143,7 @@ namespace TaTeTiDesktop
             Partida buscado = null;
             for (int n = 0; n < partidas.Count && buscado == null; n++)
             {
-                Partida p = (Partida)partidas[0];
+                Partida p = (Partida)partidas[n];
                 if (p.Ganador == nombre)
                     buscado = p;
             }

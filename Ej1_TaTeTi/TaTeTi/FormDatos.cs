@@ -44,5 +44,9 @@ namespace TaTeTiDesktop
             tbNombre.BackColor = Color.White;
         }
 
+        private void cbNivel_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cbNivel.BackColor = Color.White;
+        }
     }
 }
