@@ -43,7 +43,6 @@ namespace EscalerasYSerpientesLegacyClassLib
         {
             base.Jugar();
 
-            //comentar esto
             foreach (JugadorLegacy jugador in jugadores)
             {
                 foreach (Elemento elemento in elementos)

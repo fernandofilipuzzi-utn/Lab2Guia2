@@ -5,10 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 using EscalerasYSerpientesClassLib;
+using EscalerasYSerpientesLegacyClassLib;
 
 namespace EscalerasYSerpientesCustomClassLib
 {
-    public class JugadorCustom:Jugador
+    public class JugadorCustom:JugadorLegacy
     {
         public JugadorCustom(string nombre) : base(nombre)
         {

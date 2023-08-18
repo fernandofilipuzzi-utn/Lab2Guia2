@@ -115,6 +115,8 @@ namespace EscalerasYSerpientesDesktop
                     if (jug.HaLLegado)
                         AgregarPartida(jug.Nombre);
                 }
+
+                btnJugar.Enabled = false;
             }
         }
 
