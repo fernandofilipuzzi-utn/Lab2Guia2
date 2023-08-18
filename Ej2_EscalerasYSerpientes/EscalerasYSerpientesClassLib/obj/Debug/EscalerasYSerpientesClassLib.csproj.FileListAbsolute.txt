@@ -1,6 +1,0 @@
-F:\repos\repos_utn_lab2\Lab2Guia2\Ej2_EscalerasYSerpientes\EscalerasYSerpientesClassLib\obj\Debug\EscalerasYSerpientesClassLib.csproj.AssemblyReference.cache
-F:\repos\repos_utn_lab2\Lab2Guia2\Ej2_EscalerasYSerpientes\EscalerasYSerpientesClassLib\obj\Debug\EscalerasYSerpientesClassLib.csproj.CoreCompileInputs.cache
-F:\repos\repos_utn_lab2\Lab2Guia2\Ej2_EscalerasYSerpientes\EscalerasYSerpientesClassLib\bin\Debug\EscalerasYSerpientesClassLib.dll
-F:\repos\repos_utn_lab2\Lab2Guia2\Ej2_EscalerasYSerpientes\EscalerasYSerpientesClassLib\bin\Debug\EscalerasYSerpientesClassLib.pdb
-F:\repos\repos_utn_lab2\Lab2Guia2\Ej2_EscalerasYSerpientes\EscalerasYSerpientesClassLib\obj\Debug\EscalerasYSerpientesClassLib.dll
-F:\repos\repos_utn_lab2\Lab2Guia2\Ej2_EscalerasYSerpientes\EscalerasYSerpientesClassLib\obj\Debug\EscalerasYSerpientesClassLib.pdb
