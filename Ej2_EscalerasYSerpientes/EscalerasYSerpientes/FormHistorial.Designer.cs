@@ -1,7 +1,7 @@
 ﻿
 namespace EscalerasYSerpientesDesktop
 {
-    partial class FormHistorial
+    partial class Historial
     {
         /// <summary>
         /// Required designer variable.
@@ -29,22 +29,22 @@ namespace EscalerasYSerpientesDesktop
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lbHistorial = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // listBox1
+            // lbHistorial
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(1, 2);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(794, 407);
-            this.listBox1.TabIndex = 0;
+            this.lbHistorial.FormattingEnabled = true;
+            this.lbHistorial.Location = new System.Drawing.Point(1, 2);
+            this.lbHistorial.Name = "lbHistorial";
+            this.lbHistorial.Size = new System.Drawing.Size(167, 329);
+            this.lbHistorial.TabIndex = 0;
             // 
             // button1
             // 
             this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.button1.Location = new System.Drawing.Point(385, 415);
+            this.button1.Location = new System.Drawing.Point(47, 337);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -52,14 +52,14 @@ namespace EscalerasYSerpientesDesktop
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // FormHistorial
+            // Historial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 441);
+            this.ClientSize = new System.Drawing.Size(172, 366);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.listBox1);
-            this.Name = "FormHistorial";
+            this.Controls.Add(this.lbHistorial);
+            this.Name = "Historial";
             this.Text = "FormHistorial";
             this.ResumeLayout(false);
 
@@ -67,7 +67,7 @@ namespace EscalerasYSerpientesDesktop
 
         #endregion
 
-        public System.Windows.Forms.ListBox listBox1;
+        public System.Windows.Forms.ListBox lbHistorial;
         private System.Windows.Forms.Button button1;
     }
 }

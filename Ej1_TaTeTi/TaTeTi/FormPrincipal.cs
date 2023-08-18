@@ -114,7 +114,7 @@ namespace TaTeTiDesktop
             FormHistorial fHistorial = new FormHistorial();
 
             foreach (Partida p in ListarPartidasOrdenadas())
-                fHistorial.listBox1.Items.Add($"{ p.Ganador}  {p.Ganadas}");
+                fHistorial.lbHistorial.Items.Add($"{ p.Ganador}  {p.Ganadas}");
 
             fHistorial.ShowDialog();
 

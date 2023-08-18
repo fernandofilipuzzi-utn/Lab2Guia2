@@ -40,7 +40,7 @@ namespace EscalerasYSerpientesDesktop
 
             if (fDato.ShowDialog() == DialogResult.OK)
             {
-                listBox1.Items.Clear();
+                lbResultados.Items.Clear();
 
                 string jugador = fDato.tbNombre.Text;
                 int cantidad = Convert.ToInt32( fDato.nudCantidad.Value);
@@ -65,11 +65,13 @@ namespace EscalerasYSerpientesDesktop
                     {
                         Elemento elemento = legacy.VerElemento(m);
                         string linea = $"   {elemento.VerDescripcion()} ";
-                        listBox1.Items.Add(linea);
+
+                        lbResultados.Items.Add(linea);
+                        lbResultados.SelectedIndex = lbResultados.Items.Count - 1;
                     }
                 }
                 
-                listBox1.Items.Add("---");
+                lbResultados.Items.Add("---");
 
                 btnJugar.Enabled = true;
             }            
@@ -88,7 +90,8 @@ namespace EscalerasYSerpientesDesktop
                     string linea = $">{jugador.Nombre} se movió desde la posición: {jugador.PosicionAnterior}" +
                                     $"a la posición {jugador.PosicionActual} ({jugador.Avance})";
 
-                    listBox1.Items.Add(linea);
+                    lbResultados.Items.Add(linea);
+                    lbResultados.SelectedIndex = lbResultados.Items.Count - 1;
 
                     #region pintando las escaleras y los bichos que lo mordieron
                     if (jugador is JugadorLegacy legacy)
@@ -97,13 +100,15 @@ namespace EscalerasYSerpientesDesktop
                         {
                             Elemento quien = legacy.VerPorQuien(m);
                             linea = $"   Afectado por: {quien.VerDescripcion()} ";
-                            listBox1.Items.Add(linea);
+
+                            lbResultados.Items.Add(linea);
+                            lbResultados.SelectedIndex = lbResultados.Items.Count - 1;
                         }
                     }
                     #endregion
                 }
 
-                listBox1.Items.Add("------");
+                lbResultados.Items.Add("------");
             }
             else
             {
@@ -122,10 +127,10 @@ namespace EscalerasYSerpientesDesktop
 
         private void btnListarHistorial_Click(object sender, EventArgs e)
         {
-            FormHistorial fHistorial = new FormHistorial();
+            Historial fHistorial = new Historial();
 
             foreach (Partida p in ListarPartidasOrdenadas())
-                fHistorial.listBox1.Items.Add($"{ p.Ganador}  {p.Ganadas}");
+                fHistorial.lbHistorial.Items.Add($"{ p.Ganador}  {p.Ganadas}");
 
             fHistorial.ShowDialog();
 

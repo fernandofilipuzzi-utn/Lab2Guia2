@@ -34,7 +34,7 @@ namespace EscalerasYSerpientesDesktop
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btnNuevo = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lbResultados = new System.Windows.Forms.ListBox();
             this.btnJugar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -60,7 +60,7 @@ namespace EscalerasYSerpientesDesktop
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.listBox1);
+            this.groupBox1.Controls.Add(this.lbResultados);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(509, 424);
@@ -68,13 +68,13 @@ namespace EscalerasYSerpientesDesktop
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Resultados";
             // 
-            // listBox1
+            // lbResultados
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(6, 12);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(497, 407);
-            this.listBox1.TabIndex = 0;
+            this.lbResultados.FormattingEnabled = true;
+            this.lbResultados.Location = new System.Drawing.Point(6, 12);
+            this.lbResultados.Name = "lbResultados";
+            this.lbResultados.Size = new System.Drawing.Size(497, 407);
+            this.lbResultados.TabIndex = 0;
             // 
             // btnJugar
             // 
@@ -117,7 +117,7 @@ namespace EscalerasYSerpientesDesktop
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lbResultados;
         private System.Windows.Forms.Button btnJugar;
         private System.Windows.Forms.Button button2;
     }

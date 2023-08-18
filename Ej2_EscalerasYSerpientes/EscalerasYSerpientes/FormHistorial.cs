@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace EscalerasYSerpientesDesktop
 {
-    public partial class FormHistorial : Form
+    public partial class Historial : Form
     {
-        public FormHistorial()
+        public Historial()
         {
             InitializeComponent();
         }
