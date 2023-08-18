@@ -29,7 +29,6 @@ namespace EscalerasYSerpientesDesktop
 
         ArrayList partidas = new ArrayList();
        
-
         public FormPrincipal()
         {
             InitializeComponent();
@@ -41,6 +40,8 @@ namespace EscalerasYSerpientesDesktop
 
             if (fDato.ShowDialog() == DialogResult.OK)
             {
+                listBox1.Items.Clear();
+
                 string jugador = fDato.tbNombre.Text;
                 int cantidad = Convert.ToInt32( fDato.nudCantidad.Value);
                 int nivel = fDato.cbNivel.SelectedIndex+1;
@@ -157,8 +158,8 @@ namespace EscalerasYSerpientesDesktop
             Partida buscado = null;
             for (int n = 0; n < partidas.Count && buscado == null; n++)
             {
-                Partida p = (Partida)partidas[0];
-                if (p.Ganador == nombre)
+                Partida p = (Partida)partidas[n];
+                if (p.Ganador.Trim().ToUpper()== nombre.Trim().ToUpper() )
                     buscado = p;
             }
             #endregion
