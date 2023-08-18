@@ -1,1 +1,1 @@
-# Lab2Guia2
+# Laboratorio 2 Guía 2 - Herencia y polimorfismo
