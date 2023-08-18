@@ -17,12 +17,14 @@ namespace TaTeTiDesktop
     public partial class FormPrincipal : Form
     {
         TaTeTiBasico nuevo;
+        Button[,] btnMatrix = new Button[3, 3];
+        ArrayList partidas = new ArrayList();
+
         public FormPrincipal()
         {
             InitializeComponent();
         }
-
-        Button[,] btnMatrix = new Button[3, 3];
+                
         private void FormPrincipal_Load(object sender, EventArgs e)
         {
             btnMatrix[0, 0] = btn1;
@@ -34,6 +36,26 @@ namespace TaTeTiDesktop
             btnMatrix[2, 0] = btn7;
             btnMatrix[2, 1] = btn8;
             btnMatrix[2, 2] = btn9;
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            FormDatos fDato = new FormDatos();
+
+            if (fDato.ShowDialog() == DialogResult.OK)
+            {
+                int nivel = fDato.cbNivel.SelectedIndex;
+                if (nivel == 0)
+                    nuevo = new TaTeTiBasico(fDato.tbNombre.Text);
+                else
+                    nuevo = new TaTeTiComplejo(fDato.tbNombre.Text);
+
+                //repinto el tablero
+                for (int f = 0; f < 3; f++)
+                    for (int c = 0; c < 3; c++)
+                        btnMatrix[f, c].ImageIndex = 0;
+            }
+            plTablero.Enabled = true;
         }
 
         private void btnJugar_Click(object sender, EventArgs e)
@@ -58,32 +80,15 @@ namespace TaTeTiDesktop
             {
                 Jugador g = nuevo.HayGanador();
                 if (g != null)
+                {
                     MessageBox.Show(g.Nombre);
+                    AgregarPartida(g.Nombre);
+                }
                 else
-                    MessageBox.Show("Empate");
+                    MessageBox.Show("Empate!");
 
                 plTablero.Enabled = false;
             }
-        }
-
-        private void btnNuevo_Click(object sender, EventArgs e)
-        {
-            FormDatos fDato = new FormDatos();
-
-            if (fDato.ShowDialog() == DialogResult.OK)
-            {
-                int nivel = fDato.cbNivel.SelectedIndex;
-                if(nivel==0)
-                    nuevo = new TaTeTiBasico(fDato.tbNombre.Text);
-                else
-                    nuevo = new TaTeTiComplejo(fDato.tbNombre.Text);
-
-                //repinto el tablero
-                for (int f = 0; f < 3; f++)
-                    for (int c = 0; c < 3; c++)
-                        btnMatrix[f, c].ImageIndex = 0;
-            }
-            plTablero.Enabled = true;
         }
         
         private void ConvertButtonToMap(Button sender, out int renglon, out int columna)
@@ -104,7 +109,7 @@ namespace TaTeTiDesktop
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnVerHistorial_Click(object sender, EventArgs e)
         {
             FormHistorial fHistorial = new FormHistorial();
 
@@ -135,8 +140,6 @@ namespace TaTeTiDesktop
             }
             return partidas;
         }
-
-        ArrayList partidas = new ArrayList();
         public void AgregarPartida(string nombre)
         {
             //buscar el registro
