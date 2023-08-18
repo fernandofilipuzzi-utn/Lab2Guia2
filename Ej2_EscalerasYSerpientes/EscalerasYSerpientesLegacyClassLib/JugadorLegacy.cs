@@ -40,10 +40,13 @@ namespace EscalerasYSerpientesLegacyClassLib
         public Elemento VerPorQuien(int idx)
         {
             Elemento quien = null;
-            if (VerCantidadQuienes > 0 && VerCantidadQuienes < porQuienesFueAfectado.Count)
-                quien = (Elemento)porQuienesFueAfectado[idx];
 
-            return (Elemento)porQuienesFueAfectado[idx];
+            if (idx >= 0 && idx < porQuienesFueAfectado.Count)
+            {
+                quien = (Elemento)porQuienesFueAfectado[idx];
+            }
+
+            return quien;
         }
 
         public void AgregarAfectador(Elemento e)

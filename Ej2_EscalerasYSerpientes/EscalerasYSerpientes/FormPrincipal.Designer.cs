@@ -1,5 +1,5 @@
 ﻿
-namespace EscalerasYSerpientesVista
+namespace EscalerasYSerpientesDesktop
 {
     partial class FormPrincipal
     {
@@ -79,7 +79,7 @@ namespace EscalerasYSerpientesVista
             // btnJugar
             // 
             this.btnJugar.Enabled = false;
-            this.btnJugar.Location = new System.Drawing.Point(541, 107);
+            this.btnJugar.Location = new System.Drawing.Point(541, 94);
             this.btnJugar.Name = "btnJugar";
             this.btnJugar.Size = new System.Drawing.Size(90, 46);
             this.btnJugar.TabIndex = 11;
@@ -89,12 +89,13 @@ namespace EscalerasYSerpientesVista
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(541, 159);
+            this.button2.Location = new System.Drawing.Point(541, 146);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(90, 47);
             this.button2.TabIndex = 12;
-            this.button2.Text = "Listar Ranking";
+            this.button2.Text = "Listar Historial";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.btnListarHistorial_Click);
             // 
             // FormPrincipal
             // 

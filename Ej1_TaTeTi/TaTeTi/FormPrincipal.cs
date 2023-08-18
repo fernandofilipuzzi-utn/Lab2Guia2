@@ -78,7 +78,6 @@ namespace TaTeTiDesktop
                 else
                     nuevo = new TaTeTiComplejo(fDato.tbNombre.Text);
 
-
                 //repinto el tablero
                 for (int f = 0; f < 3; f++)
                     for (int c = 0; c < 3; c++)

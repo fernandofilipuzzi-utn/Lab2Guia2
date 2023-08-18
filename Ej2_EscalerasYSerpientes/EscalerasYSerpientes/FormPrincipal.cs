@@ -8,14 +8,27 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Collections;
+
+//nivel 1
 using EscalerasYSerpientesClassLib;
 
-namespace EscalerasYSerpientesVista
+//nivel 2
+using EscalerasYSerpientesLegacyClassLib;
+
+//nivel 3
+using EscalerasYSerpientesCustomClassLib;
+
+using EscalerasYSerpientesDesktop.Modelo;
+
+namespace EscalerasYSerpientesDesktop
 { 
     public partial class FormPrincipal : Form
-
     {
         EscalerasYSerpientesBasico nuevo;
+
+        ArrayList partidas = new ArrayList();
+       
 
         public FormPrincipal()
         {
@@ -30,18 +43,31 @@ namespace EscalerasYSerpientesVista
             {
                 string jugador = fDato.tbNombre.Text;
                 int cantidad = Convert.ToInt32( fDato.nudCantidad.Value);
+                int nivel = fDato.cbNivel.SelectedIndex+1;
 
-                nuevo = new EscalerasYSerpientesBasico(jugador, cantidad);
-
-                /*
-                for (int m = 0; m < nuevo.CantidadElementos; m++)
+                if (nivel == 1)
                 {
-                    Elemento elemento = nuevo.VerElemento(m);
-                    string linea = $"   {elemento.VerDescripcion()} ";
-                    listBox1.Items.Add(linea);
+                    nuevo = new EscalerasYSerpientesBasico(jugador, cantidad);
                 }
-                */
+                else if (nivel == 2)
+                {
+                    nuevo = new EscaleraYSerpientesLegacy(jugador, cantidad);
+                }
+                else if (nivel == 3)
+                {
+                    nuevo = new EscalerasYSerpientesCustom(jugador, cantidad);
+                }
 
+                if (nuevo is EscaleraYSerpientesLegacy legacy)
+                {
+                    for (int m = 0; m < legacy.CantidadElementos; m++)
+                    {
+                        Elemento elemento = legacy.VerElemento(m);
+                        string linea = $"   {elemento.VerDescripcion()} ";
+                        listBox1.Items.Add(linea);
+                    }
+                }
+                
                 listBox1.Items.Add("---");
 
                 btnJugar.Enabled = true;
@@ -63,14 +89,17 @@ namespace EscalerasYSerpientesVista
 
                     listBox1.Items.Add(linea);
 
-                    /*
-                    for (int m = 0; m < jugador.VerCantidadQuienes; m++)
+                    #region pintando las escaleras y los bichos que lo mordieron
+                    if (jugador is JugadorLegacy legacy)
                     {
-                        Elemento quien = jugador.VerPorQuien(n);
-                        linea = $"   Afectador por: {quien.VerDescripcion()} ";
-                        listBox1.Items.Add(linea);
+                        for (int m = 0; m < legacy.VerCantidadQuienes; m++)
+                        {
+                            Elemento quien = legacy.VerPorQuien(m);
+                            linea = $"   Afectado por: {quien.VerDescripcion()} ";
+                            listBox1.Items.Add(linea);
+                        }
                     }
-                    */
+                    #endregion
                 }
 
                 listBox1.Items.Add("------");
@@ -78,7 +107,68 @@ namespace EscalerasYSerpientesVista
             else
             {
                 MessageBox.Show("Finalizó!");
+
+                for (int n = 0; n < nuevo.CantidadJugadores; n++)
+                {
+                    Jugador jug = (Jugador)(nuevo.VerJugador(n));
+                    if (jug.HaLLegado)
+                        AgregarPartida(jug.Nombre);
+                }
             }
+        }
+
+        private void btnListarHistorial_Click(object sender, EventArgs e)
+        {
+            FormHistorial fHistorial = new FormHistorial();
+
+            foreach (Partida p in ListarPartidasOrdenadas())
+                fHistorial.listBox1.Items.Add($"{ p.Ganador}  {p.Ganadas}");
+
+            fHistorial.ShowDialog();
+
+            fHistorial.Dispose();
+        }
+
+        //
+
+        public ArrayList ListarPartidasOrdenadas()
+        {
+            for (int n = 0; n < partidas.Count - 1; n++)
+            {
+                for (int m = 0; m < partidas.Count - 1; m++)
+                {
+                    Partida p = (Partida)partidas[n];
+                    Partida q = (Partida)partidas[m];
+
+                    if (p.Ganadas < q.Ganadas)
+                    {
+                        object aux = partidas[n];
+                        partidas[n] = partidas[m];
+                        partidas[m] = aux;
+                    }
+                }
+            }
+            return partidas;
+        }
+
+        public void AgregarPartida(string nombre)
+        {
+            #region buscar el registro primero!
+            Partida buscado = null;
+            for (int n = 0; n < partidas.Count && buscado == null; n++)
+            {
+                Partida p = (Partida)partidas[0];
+                if (p.Ganador == nombre)
+                    buscado = p;
+            }
+            #endregion
+
+            #region lo actualizo silo encuentro sono lo agrego 
+            if (buscado != null)
+                buscado.Ganadas++;
+            else
+                partidas.Add(new Partida(nombre, 1));
+            #endregion
         }
     }
 }

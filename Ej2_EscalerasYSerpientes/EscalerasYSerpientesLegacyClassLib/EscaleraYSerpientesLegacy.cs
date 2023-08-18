@@ -12,6 +12,10 @@ namespace EscalerasYSerpientesLegacyClassLib
     public class EscaleraYSerpientesLegacy:EscalerasYSerpientesBasico
     {
         protected ArrayList elementos = new ArrayList();
+        public int CantidadElementos
+        {
+            get { return elementos.Count; }
+        }
 
         public EscaleraYSerpientesLegacy(string nombre, int cantJugadores) : base(nombre, cantJugadores)
         {            
@@ -34,9 +38,7 @@ namespace EscalerasYSerpientesLegacyClassLib
                 elementos.Add(new Serpiente());
             }
         }
-
-        public int CantidadElementos { get { return elementos.Count; } }
-
+          
         override public void Jugar()
         {
             base.Jugar();
@@ -49,6 +51,11 @@ namespace EscalerasYSerpientesLegacyClassLib
                     elemento.Evaluar(jugador);
                 }
             }
+        }
+
+        public Elemento VerElemento(int idx)
+        {
+            return (Elemento)elementos[idx];
         }
     }
 }

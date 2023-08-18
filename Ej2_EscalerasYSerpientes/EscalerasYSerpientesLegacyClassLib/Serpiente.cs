@@ -23,8 +23,8 @@ namespace EscalerasYSerpientesLegacyClassLib
             if (jugador.PosicionActual == Cabeza)
             {
                 jugador.PosicionActual = Cola;
-                if(jugador is JugadorLegacy)
-                    ((JugadorLegacy)jugador).AgregarAfectador(this);
+                if(jugador is JugadorLegacy legacy)
+                    legacy.AgregarAfectador(this);
             }
         }
 

@@ -14,14 +14,14 @@ namespace EscalerasYSerpientesCustomClassLib
         {
         }
 
-        public int TurnosSuspendos { get; set; }
+        public int TurnosSuspendidos { get; set; }
 
         public override void Mover() 
         {
-            if (TurnosSuspendos <= 0)
+            if (TurnosSuspendidos <= 0)
                 base.Mover();
             else
-                TurnosSuspendos--;
+                TurnosSuspendidos--;
         }
     }
 }
