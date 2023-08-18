@@ -8,7 +8,7 @@
 **Ejercicio 2: Escaleras y serpientes**<br/>
 <br/>
 **Sistema** el sistema puede ser el formulario<br/>
-![alt text](https://github.com/fernandofilipuzzi-utn/Lab2Guia2/blob/main/Ej2_EscalerasYSerpientes/EscalerasYSerpientesClassLib/uml/sistema.jpg?raw=true)
+![alt text](https://github.com/fernandofilipuzzi-utn/Lab2Guia2/blob/main/Ej2_EscalerasYSerpientes/EscalerasYSerpientesDesktop/uml/sistema.jpg?raw=true)
 <br/>
 **Nivel 1 o básico** - solo los jugadores se mueven sin ningún obstaculo.<br/>
 ![alt text](https://github.com/fernandofilipuzzi-utn/Lab2Guia2/blob/main/Ej2_EscalerasYSerpientes/EscalerasYSerpientesClassLib/uml/nivel1.jpg?raw=true)
