@@ -14,7 +14,7 @@
 ![alt text](https://github.com/fernandofilipuzzi-utn/Lab2Guia2/blob/main/Ej2_EscalerasYSerpientes/EscalerasYSerpientesClassLib/uml/nivel1.jpg?raw=true)
 <br/>
 **Nivel 2 o completo** - "Legacy" - incorpora los elementos como escaleras y serpietnes tal como se define el juego.<br/>
-![alt text](https://github.com/fernandofilipuzzi-utn/Lab2Guia2/blob/main/Ej2_EscalerasYSerpientes/EscalerasYSerpientesClassLib/uml/nivel2.jpg?raw=true)
+![alt text](https://github.com/fernandofilipuzzi-utn/Lab2Guia2/blob/main/Ej2_EscalerasYSerpientes/EscalerasYSerpientesLegacyClassLib/uml/nivel2.jpg?raw=true)
 <br/>
 **Nivel 3** - "Custom" - aparecen las serpientes venenosas - si pica al jugador pierde tres turnos..<br/>
-![alt text](https://github.com/fernandofilipuzzi-utn/Lab2Guia2/blob/main/Ej2_EscalerasYSerpientes/EscalerasYSerpientesClassLib/uml/nivel3.jpg?raw=true)
+![alt text](https://github.com/fernandofilipuzzi-utn/Lab2Guia2/blob/main/Ej2_EscalerasYSerpientes/EscalerasYSerpientesCustomClassLib/uml/nivel3.jpg?raw=true)
